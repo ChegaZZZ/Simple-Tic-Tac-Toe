@@ -35,14 +35,13 @@ public class TicTacToe {
             if (isTheWinner(gameBoard, 'X')) {
                 System.out.println("X wins");
                 break;
-            }
-
-            if (isTheWinner(gameBoard, 'O')) {
+            } else if (isTheWinner(gameBoard, 'O')) {
                 System.out.println("O wins");
                 break;
+            } else {
+                moves++;
             }
-
-            moves++;
+            
             if (moves == 9) {
                 break;
             }

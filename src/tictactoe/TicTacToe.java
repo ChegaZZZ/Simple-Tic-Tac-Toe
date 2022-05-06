@@ -23,9 +23,7 @@ public class TicTacToe {
 
             if (inputCheck(gameBoard, coordinates)) {
                 continue;
-            }
-
-            if (counter % 2 == 0) {
+            } else if (counter % 2 == 0) {
                 playerMove(gameBoard, coordinates, "secondPlayer");
             } else {
                 playerMove(gameBoard, coordinates, "firstPlayer");
